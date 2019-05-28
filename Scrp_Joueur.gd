@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 # Declare member variables here. Examples:
-var speed = 750
-var jump_speed = 400
-var gravity = 10
+var speed = 500
+var jump_speed = 500
+var gravity = 20
 
 var velocity = Vector2()
 
@@ -13,7 +13,7 @@ var direction
 func _physics_process(delta):
 	velocity.x = (int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))) * speed
 	
-	if (Input.is_action_just_pressed("jump")):
+	if (is_on_floor() and Input.is_action_just_pressed("jump")):
 		velocity.y = -jump_speed
 	velocity.y += gravity
 	
