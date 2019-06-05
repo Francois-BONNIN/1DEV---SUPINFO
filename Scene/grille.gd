@@ -11,7 +11,17 @@ var possible_pieces = [
 preload("res://BluePiece.tscn"),
 preload("res://GreenPiece.tscn"),
 preload("res://PinkPiece.tscn"),
-preload("res://YellowPiece.tscn")
+preload("res://YellowPiece.tscn"),
+preload("res://BluePiece.tscn"),
+preload("res://GreenPiece.tscn"),
+preload("res://PinkPiece.tscn"),
+preload("res://YellowPiece.tscn"),
+preload("res://BluePiece.tscn"),
+preload("res://GreenPiece.tscn"),
+preload("res://PinkPiece.tscn"),
+preload("res://YellowPiece.tscn"),
+preload("res://Bouteille.tscn"),
+preload("res://BrownPiece.tscn")
 ];
 
 export var all_pieces = [];

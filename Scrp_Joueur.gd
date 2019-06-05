@@ -44,6 +44,12 @@ func get_input():
 			if colliLeft.is_in_group("Blocks"):
 				colliLeft.queue_free()
 	
+	elif (Input.is_action_just_pressed("ui_accept")):
+		if droite.is_colliding():
+			colliRight = droite.get_collider()
+			if colliRight.is_in_group("Hard"):
+				colliRight.queue_free()
+		
 	else:
 		$AnimatedSprite.play("Static")
 			
